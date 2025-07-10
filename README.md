@@ -1,106 +1,74 @@
-<<<<<<< HEAD
-import { useEffect, useRef, useState } from "react";
-import { useLocation } from "wouter";
 
-export default function EditProfile() {
-    const [, setLocation] = useLocation();
-    const fileInputRef = useRef();
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [image, setImage] = useState("");
 
-    useEffect(() => {
-        setName(localStorage.getItem("userName") || "");
-        setEmail(localStorage.getItem("userEmail") || "");
-        setImage(localStorage.getItem("userImage") || "https://i.pravatar.cc/100?img=5");
-    }, []);
 
-    const handleImageUpload = (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
+````markdown
+# 🌿 AyurLearn
 
-        const reader = new FileReader();
-        reader.onloadend = () => {
-            setImage(reader.result); // base64 image preview
-        };
-        reader.readAsDataURL(file);
-    };
+**AyurLearn** is a frontend-only prototype for an educational platform that teaches and spreads awareness about Ayurveda in an interactive and modern way.
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        localStorage.setItem("userName", name);
-        localStorage.setItem("userEmail", email);
-        localStorage.setItem("userImage", image);
-        alert("Profile updated!");
-        setLocation("/dashboard");
-    };
+## 🔥 Features
 
-    return (
-        <section className="min-h-screen flex items-center justify-center bg-green-50 px-4 py-10">
-            <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
-                <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">Edit Profile</h2>
+- 📚 Course listing and enrollment UI
+- 🧘‍♀️ Ayurveda-themed clean design
+- ✅ Responsive layout (Mobile + Desktop)
+- 🧭 Simple routing (if using React Router or similar)
 
-                {/* Profile Photo Section */}
-                <div className="flex items-center gap-4 mb-6">
-                    <img
-                        src={image}
-                        alt="Profile Preview"
-                        className="h-20 w-20 rounded-full object-cover border border-green-500"
-                    />
-                    <div>
-                        <button
-                            type="button"
-                            onClick={() => fileInputRef.current.click()}
-                            className="text-green-700 underline text-sm hover:text-green-900"
-                        >
-                            Change Photo
-                        </button>
-                        <input
-                            type="file"
-                            accept="image/*"
-                            onChange={handleImageUpload}
-                            ref={fileInputRef}
-                            className="hidden"
-                        />
-                    </div>
-                </div>
+## 🛠 Tech Stack
 
-                {/* Form */}
-                <form onSubmit={handleSubmit} className="space-y-5">
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Name</label>
-                        <input
-                            type="text"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            className="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500"
-                            required
-                        />
-                    </div>
+- HTML5
+- CSS3 / Tailwind 
+- JavaScript
+- React.js 
 
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Email</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500"
-                            required
-                        />
-                    </div>
+## 🚀 Getting Started
 
-                    <button
-                        type="submit"
-                        className="w-full bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition"
-                    >
-                        Save Changes
-                    </button>
-                </form>
-            </div>
-        </section>
-    );
-} in thsi show which plna uisng free or premium likthat aslo 
-=======
-# Ayurlearn
->>>>>>> ab2c9a5223355c3f325b2869896e6e98cb0f2758
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/BRAHMISREE/Ayurlearn.git
+cd Ayurlearn
+````
+
+### 2. Install dependencies (if it's React or uses npm)
+
+```bash
+npm install
+```
+
+### 3. Start development server
+
+```bash
+npm start
+```
+
+Or just open the `index.html` directly in browser if it’s static.
+
+---
+
+## 🌐 Deployment
+
+This project is deployed on **[Vercel](https://vercel.com/)**
+🔗 Live Site: *\[your-vercel-link-here]* (update after deploying)
+
+
+
+
+
+
+
+
+
+
+
+---
+
+Once you save this file as `README.md`, you can:
+
+```bash
+git add README.md
+git commit -m "Added README"
+git push
+````
+
+
