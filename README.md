@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 
@@ -100,3 +101,6 @@ export default function EditProfile() {
         </section>
     );
 } in thsi show which plna uisng free or premium likthat aslo 
+=======
+# Ayurlearn
+>>>>>>> ab2c9a5223355c3f325b2869896e6e98cb0f2758
