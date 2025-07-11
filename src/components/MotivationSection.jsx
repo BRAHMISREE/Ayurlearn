@@ -30,7 +30,7 @@ export default function MotivationSection() {
               Start Healing Today
             </a>
             <a
-              href="https://www.youtube.com/watch?v=B0bZvBgHzA0"
+              href="https://www.youtube.com/watch?v=qUQ2-IHd86s"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 border border-[#6b8e23] text-[#4f6f52] hover:text-white px-6 py-3 rounded-full font-medium hover:bg-[#6b8e23] transition-all duration-300"
