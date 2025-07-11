@@ -13,26 +13,32 @@ import EditProfile from "./pages/EditProfile.jsx";
 import CourseLearnView from "./pages/CourseLearnView.jsx";
 import AdminPanel from "./pages/AdminPanel.jsx";
 import WebinarForm from "./pages/WebinarForm.jsx";
+import WebinarPayment from "./pages/WebinarPayment.jsx";
+import WebinarConfirmation from "./pages/WebinarConfirmation.jsx";
 
 export default function App() {
   return (
     <>
-      {/* Public Routes */}
-      <Route path="/" component={LandingPage} />
-      <Route path="/courses" component={Courses} />
-      <Route path="/courses/:id" component={CourseDetails} />
-      <Route path="/login" component={Login} />
-      <Route path="/register" component={Register} />
+        {/* Public Routes */}
+        <Route path="/" component={LandingPage} />
+        <Route path="/courses" component={Courses} />
+        <Route path="/courses/:id" component={CourseDetails} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+
+        {/*  Webinar*/}
         <Route path="/webinar" component={WebinarForm} />
+        <Route path="/webinar/payment" component={WebinarPayment} />
+        <Route path="/webinar/confirmation" component={WebinarConfirmation} />
 
-      {/* User Dashboard & Learning */}
-      <Route path="/dashboard" component={Dashboard} />
-      <Route path="/my-courses" component={EnrolledCourses} />
-      <Route path="/edit-profile" component={EditProfile} />
-      <Route path="/course/:id/learn" component={CourseLearnView} />
+        {/* User Dashboard & Learning */}
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/my-courses" component={EnrolledCourses} />
+        <Route path="/edit-profile" component={EditProfile} />
+        <Route path="/course/:id/learn" component={CourseLearnView} />
 
-      {/* Admin Panel */}
-      <Route path="/admin" component={AdminPanel} />
+        {/* Admin Panel */}
+        <Route path="/admin" component={AdminPanel} />
     </>
   );
 }
