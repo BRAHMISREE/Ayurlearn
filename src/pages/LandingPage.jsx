@@ -3,7 +3,7 @@ import HeroSection from "../components/HeroSection.jsx";
 import Footer from "../components/Footer.jsx";
 import BestCourses from "../components/BestCourses.jsx";
 import ReviewSection from "../components/ReviewSection.jsx";
-import CommunitySection from "../components/CommunitySection";
+import WebinarSection from "../components/WebinarSection.jsx";
 import FAQSection from "../components/FAQSection";
 import SubscriptionPlans from "../components/SubscriptionPlans";
 import WhyAyurveda from "../components/WhyAyurveda.jsx";
@@ -14,25 +14,14 @@ export default function LandingPage() {
     <>
       <Navbar />
       <HeroSection />
-
-    <MotivationSection />
-
+      <MotivationSection />
       <BestCourses />
-
-      
-    
-    
-    <WhyAyurveda />  
-
-
-    <SubscriptionPlans />
+      <WhyAyurveda />
+      <WebinarSection />
+      <SubscriptionPlans />
       <ReviewSection />
       <FAQSection />
       <Footer />
-      
-
-      
-     
     </>
   );
 }

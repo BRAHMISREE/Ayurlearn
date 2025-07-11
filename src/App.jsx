@@ -12,6 +12,7 @@ import EnrolledCourses from "./pages/EnrolledCourses.jsx";
 import EditProfile from "./pages/EditProfile.jsx";
 import CourseLearnView from "./pages/CourseLearnView.jsx";
 import AdminPanel from "./pages/AdminPanel.jsx";
+import WebinarForm from "./pages/WebinarForm.jsx";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <Route path="/courses/:id" component={CourseDetails} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
+        <Route path="/webinar" component={WebinarForm} />
 
       {/* User Dashboard & Learning */}
       <Route path="/dashboard" component={Dashboard} />
