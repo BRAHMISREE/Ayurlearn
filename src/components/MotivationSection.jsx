@@ -49,7 +49,7 @@ export default function MotivationSection() {
         >
           <iframe
             className="w-full h-64 md:h-80 rounded-xl"
-            src="https://www.youtube.com/embed/B0bZvBgHzA0"
+            src="https://www.youtube.com/embed/qUQ2-IHd86s"
             title="Ayurveda Healing Story"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
