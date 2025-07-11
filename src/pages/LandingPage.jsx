@@ -24,7 +24,6 @@ export default function LandingPage() {
     
     <WhyAyurveda />  
 
-     <CommunitySection />
 
     <SubscriptionPlans />
       <ReviewSection />
